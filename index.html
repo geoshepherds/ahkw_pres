@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<title>AHKW Website Presentation</title>
+<meta charset="utf-8">
+<meta name="author" content="Active Healthy Kids Wales Website Presentation">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+<style>
+    @keyframes dragonIntro {
+        100% {
+            background-position: -1602px 0;
+        }
+    }
+    
+    @keyframes moveDragon {
+        80% {
+            left: 200%;
+        }
+        100% {
+            right: -100%;
+            display: none;
+        }
+    }
+    
+    @keyframes moveBg {
+        0% {
+            display: block;
+        }
+        100% {
+            left: 100%;
+            display: none;
+        }
+    }
+    
+    
+    @keyframes fadeOut {
+        100% {
+            opacity: 0;
+        }
+    }
+   
+    body {
+        font-family: 'Lato', sans-serif;
+        color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    h4 {
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    
+    div.background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+    }
+    
+    div.container {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -35%);
+        overflow: hidden;
+        animation-fill-mode: forwards;
+    }
+    
+    div.animation {
+        width: 200px;
+        height: 123px;
+        background: url(ahkw_logo_animate.svg) left center;
+        animation: dragonIntro 0.7s steps(8) infinite;
+        animation-fill-mode: forwards;
+    }
+    
+    div.ahkw {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        width: 650px;
+        display: table;
+        text-align: center;
+    }
+    
+    a {
+        cursor: pointer;
+    }
+    
+    h2 {
+        display: table-cell;
+        vertical-align: middle;
+        margin-top: 20%;
+        font-family: 'Lato';
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 900;
+    }
+    
+    h2 > span {
+        color: #C92918;
+    }
+    
+    div.gs {
+        display: table;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #0f2228;
+        width: 100%;
+        padding: 20px 0 40px 0;
+    }
+    
+    div.gs > div {
+        display: table-cell;
+        width: 25%;
+    }
+    
+    div.logo > img {
+        height: 100px;
+        width: auto;
+        vertical-align: middle;
+        padding-left: 40px;
+    }
+    
+    div.code > h4 {
+        padding-right: 40px;
+    }
+    
+
+</style>
+</head>
+<body>
+    
+    <div class="background">
+        <div class="ahkw">
+            <h2>Active Healthy Kids Wales - <span>The Website</span></h2>
+        </div>
+        <div class="container">
+            <a href="http://activehealthykidswales.com" target="_blank">
+                <div class="animation"></div>
+            </a>
+        </div>
+        
+        <div class="gs">
+            <div class="logo">
+                <img src="gs_logo_invert.svg" alt="Geoshepherds Logo">
+            </div>
+            <div class="website">
+                <h4>geoshepherds.com</h4>
+            </div>
+            <div class="email">
+                <h4>info@geoshepherds.com</h4>
+            </div>
+            <div class="code">
+                <h4>github.com/geoshepherds/ahkw_website</h4>
+            </div>
+        </div>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="app.js"></script>
+</body> 
+
+</html>
